@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 
 CAR_PRICE_API_DIR = Path(__file__).resolve().parent
-MODEL_PATH = "E:\\Data Science\\fast_api\\model\\car-price-api\\random_forest_model.pkl"
-COLS_PATH =  "E:/Data Science/fast_api/model/car-price-api/feature_columns.pkl"
+MODEL_PATH = CAR_PRICE_API_DIR / "random_forest_model.pkl"
+COLS_PATH = CAR_PRICE_API_DIR / "feature_columns.pkl"
 print(COLS_PATH)
 _model = None
 _feature_columns = None
